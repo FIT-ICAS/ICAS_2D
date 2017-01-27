@@ -19,13 +19,13 @@ public class SyncPlayerMovement : NetworkBehaviour {
 			this.transform.position = Vector3.Lerp (this.transform.position, pos, lerpRate * Time.deltaTime);
 			this.transform.rotation = Quaternion.Lerp (this.transform.rotation, rot, lerpRate * Time.deltaTime);
 		}
-		//CmdGiveNewPositionAndRot (this.transform.position, this.transform.rotation);
+		CmdGiveNewPositionAndRot (this.transform.position, this.transform.rotation);
 	}
 
 	[Command]
 	void CmdGiveNewPositionAndRot( Vector3 pos, Quaternion rot){ // I want the client to give back the new position of the other player
-		this.transform.position = Vector3.Lerp (this.transform.position, pos, lerpRate * Time.deltaTime);
-		this.transform.rotation = Quaternion.Lerp (this.transform.rotation, rot, lerpRate * Time.deltaTime);
+		this.transform.position = pos;//Vector3.Lerp (this.transform.position, pos, lerpRate * Time.deltaTime);
+		this.transform.rotation = rot;//Quaternion.Lerp (this.transform.rotation, rot, lerpRate * Time.deltaTime);
 	}
 
 	[ServerCallback]
