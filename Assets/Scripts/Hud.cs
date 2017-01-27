@@ -2,22 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Networking;
 
-public class Hud : MonoBehaviour {
-	
-	private Rigidbody2D carRig;
+public class Hud : NetworkBehaviour {
 
+	[SerializeField]
 	private Text currentVelocity;
 
-	void Start(){
-		carRig = GetComponent<Rigidbody2D> ();
-		currentVelocity = GetComponent<Text> ();
-	}
+	[SerializeField]
+	private Rigidbody2D playerRig;
+
+
 	
 	// Update is called once per frame
-	void Update () {
-		currentVelocity.text = carRig.velocity.magnitude + " kpH";
+	void FixedUpdate () {
+		if (!isLocalPlayer)
+			return;
+		currentVelocity.text = playerRig.velocity.magnitude + "kpH";
 	}
+
 
 
 }

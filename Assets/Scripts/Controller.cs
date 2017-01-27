@@ -58,7 +58,7 @@ public class Controller : NetworkBehaviour {
 		}
 
 		float velocity1 = cur_velocity + EngineForce*Time.deltaTime*v - deceleration - braking_coeff*braking*Time.deltaTime;
-		rigidbody2D.velocity = transform.right * velocity1;
+		rigidbody2D.velocity = transform.up * velocity1; // Drew I changed this to forward ----------
 
 		if (v == 0 && braking == 1 && cur_velocity < 0.5) { //Stops vehicle completely
 			rigidbody2D.velocity = new Vector2(0f,0f);
@@ -96,6 +96,7 @@ public class Controller : NetworkBehaviour {
 		speed = cur_velocity_mph;
 	}
 	void OnGUI(){
-		GUI.Label (new Rect (10, 10, 100, 90), speed + " mph");
+		if(isLocalPlayer)
+			GUI.Label (new Rect (10, 10, 100, 90), speed + " mph");
 	}
 }
