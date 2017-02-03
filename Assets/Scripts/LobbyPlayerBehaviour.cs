@@ -12,12 +12,15 @@ public class LobbyPlayerBehaviour : NetworkBehaviour {
 	[SerializeField]
 	private AudioListener thisAudioListener;
 
+	public GameObject thisCanv;
+
 	void Update()
 	{
 		if (!isLocalPlayer) {
 
 			thisCam.enabled = false;
 			thisAudioListener.enabled = false;
+			thisCanv.SetActive (false);
 			return;
 		}
 	}
