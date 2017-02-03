@@ -2,10 +2,10 @@ Mono path[0] = 'C:/Users/James/Documents/GitHub/ICAS_2D/ICAS_Data/Managed'
 Mono path[1] = 'C:/Users/James/Documents/GitHub/ICAS_2D/ICAS_Data/Mono'
 Mono config path = 'C:/Users/James/Documents/GitHub/ICAS_2D/ICAS_Data/Mono/etc'
 PlayerConnection initialized from C:/Users/James/Documents/GitHub/ICAS_2D/ICAS_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55105
-Broadcasting "[IP] 169.254.16.196 [Port] 55105 [Flags] 2 [Guid] 3912201213 [EditorId] 701871262 [Version] 1048832 [Id] WindowsPlayer(James-PC) [Debug] 0" to [169.254.255.255:54997]...
-Started listening to [0.0.0.0:55105]
-PlayerConnection already initialized - listening to [0.0.0.0:55105]
+PlayerConnection initialized network socket : 0.0.0.0 55015
+Broadcasting "[IP] 169.254.16.196 [Port] 55015 [Flags] 2 [Guid] 1568388462 [EditorId] 2056395893 [Version] 1048832 [Id] WindowsPlayer(James-PC) [Debug] 0" to [169.254.255.255:54997]...
+Started listening to [0.0.0.0:55015]
+PlayerConnection already initialized - listening to [0.0.0.0:55015]
 Initialize engine version: 5.5.1f1 (88d00a7498cd)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -25,44 +25,75 @@ Platform assembly: C:\Users\James\Documents\GitHub\ICAS_2D\ICAS_Data\Managed\Uni
 Loading C:\Users\James\Documents\GitHub\ICAS_2D\ICAS_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\James\Documents\GitHub\ICAS_2D\ICAS_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading C:\Users\James\Documents\GitHub\ICAS_2D\ICAS_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.183 seconds
+- Completed reload, in  0.128 seconds
 Platform assembly: C:\Users\James\Documents\GitHub\ICAS_2D\ICAS_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\James\Documents\GitHub\ICAS_2D\ICAS_Data\Managed\System.dll (this message is harmless)
 desktop: 1440x900 60Hz; virtual: 3360x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.641963 ms
+UnloadTime: 3.492310 ms
 Setting up 3 worker threads for Enlighten.
-  Thread -> id: 1998 -> priority: 1 
-  Thread -> id: 2348 -> priority: 1 
-  Thread -> id: 2e84 -> priority: 1 
+  Thread -> id: 2ef8 -> priority: 1 
+  Thread -> id: 2cf8 -> priority: 1 
+  Thread -> id: 2248 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.422272 ms
+UnloadTime: 5.793920 ms
 Scene loaded
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
 UnityEngine.Debug:Log(Object)
-<C_LoadScene>c__Iterator0:MoveNext() (at C:\Users\James\Documents\GitHub\ICAS_2D\Assets\Scripts\HudFunctions.cs:75)
+<C_LoadScene>c__Iterator0:MoveNext() (at C:\Users\James\Documents\GitHub\ICAS_2D\Assets\Scripts\HudFunctions.cs:82)
 UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17)
  
-(Filename: C:/Users/James/Documents/GitHub/ICAS_2D/Assets/Scripts/HudFunctions.cs Line: 75)
+(Filename: C:/Users/James/Documents/GitHub/ICAS_2D/Assets/Scripts/HudFunctions.cs Line: 82)
 
 1
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
 UnityEngine.Debug:Log(Object)
-<C_LoadScene>c__Iterator0:MoveNext() (at C:\Users\James\Documents\GitHub\ICAS_2D\Assets\Scripts\HudFunctions.cs:76)
+<C_LoadScene>c__Iterator0:MoveNext() (at C:\Users\James\Documents\GitHub\ICAS_2D\Assets\Scripts\HudFunctions.cs:83)
 UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17)
  
-(Filename: C:/Users/James/Documents/GitHub/ICAS_2D/Assets/Scripts/HudFunctions.cs Line: 76)
+(Filename: C:/Users/James/Documents/GitHub/ICAS_2D/Assets/Scripts/HudFunctions.cs Line: 83)
 
-System memory in use before: 19.1 MB.
+System memory in use before: 18.5 MB.
 System memory in use after: 18.5 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 397.
-Total: 0.312656 ms (FindLiveObjects: 0.014592 ms CreateObjectMapping: 0.019249 ms MarkObjects: 0.231620 ms  DeleteObjects: 0.040362 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 394.
+Total: 0.740191 ms (FindLiveObjects: 0.036016 ms CreateObjectMapping: 0.049056 ms MarkObjects: 0.526578 ms  DeleteObjects: 0.087866 ms)
 
-Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:58354}
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:53488}
+Player not destroyed when connection disconnected.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+UnityEngine.Networking.NetworkServer:OnDisconnected(NetworkConnection) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:736)
+UnityEngine.Networking.ServerSimpleWrapper:OnDisconnected(NetworkConnection) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:1846)
+UnityEngine.Networking.NetworkServerSimple:HandleDisconnect(Int32, Byte) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServerSimple.cs:364)
+UnityEngine.Networking.NetworkServerSimple:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServerSimple.cs:254)
+UnityEngine.Networking.NetworkServer:InternalUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:705)
+UnityEngine.Networking.NetworkServer:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:655)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1088)
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkServer.cs Line: 736)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:49900}
+Player not destroyed when connection disconnected.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+UnityEngine.Networking.NetworkServer:OnDisconnected(NetworkConnection) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:736)
+UnityEngine.Networking.ServerSimpleWrapper:OnDisconnected(NetworkConnection) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:1846)
+UnityEngine.Networking.NetworkServerSimple:HandleDisconnect(Int32, Byte) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServerSimple.cs:364)
+UnityEngine.Networking.NetworkServerSimple:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServerSimple.cs:254)
+UnityEngine.Networking.NetworkServer:InternalUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:705)
+UnityEngine.Networking.NetworkServer:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:655)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1088)
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkServer.cs Line: 736)
+
