@@ -15,6 +15,8 @@ public class SyncPlayerMovement2 : NetworkBehaviour {
 	[SerializeField]
 	private Rigidbody2D carRigidBody;
 
+	public Canvas canv;
+
 	[Command]
 	void CmdLerpPositionAndRotation(Vector3 pos, Quaternion rot){ // on server machine each object runs this script
 		
@@ -40,7 +42,7 @@ public class SyncPlayerMovement2 : NetworkBehaviour {
 	void Update()
 	{
 		if (!isLocalPlayer) { // Don't change
-
+			canv.enabled = false;
 			thisCam.enabled = false;
 			thisAudioListener.enabled = false;
 			carRigidBody.velocity = new Vector2 (0f, 0f);
