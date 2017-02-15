@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 public class Speedometer : NetworkBehaviour {
-
+	public GameObject ICASObject;
 	private float curSpd = 0, desSpd = 0;
 	private bool ICASCtrl = false;
 	public GameObject CurFirstDigit, CurSecondDigit, DesFirstDigit, DesSecondDigit, Car, GreenIndicator, RedIndicator;
 	private Digit d_CurFirstDigit, d_CurSecondDigit, d_DesFirstDigit, d_DesSecondDigit;
+	private bool leftBlinker = false, rightBlinker = false;
+
 	void Start(){
 		d_CurFirstDigit = CurFirstDigit.GetComponent<Digit> ();
 		d_CurSecondDigit = CurSecondDigit.GetComponent<Digit> ();
@@ -19,6 +21,7 @@ public class Speedometer : NetworkBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		
 		if(!isLocalPlayer)
 			return;
 
@@ -46,5 +49,12 @@ public class Speedometer : NetworkBehaviour {
 		int second = (int)(spd / 10) % 10;
 		d_DesFirstDigit.number = first;
 		d_DesSecondDigit.number = second;
+	}
+	IEnumerator LeftBlinker(){
+
+	}
+
+	IEnumerator RightBlinker(){
+
 	}
 }

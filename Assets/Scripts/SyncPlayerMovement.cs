@@ -16,8 +16,8 @@ public class SyncPlayerMovement : NetworkBehaviour {
 	void RpcLerpToPosAndRot(Vector3 pos, Quaternion rot) // This is correct, server not updating though
 	{
 		if (!isLocalPlayer) {
-			this.transform.position = pos;
-			this.transform.rotation = rot;
+			this.transform.position = Vector3.Lerp (this.transform.position, pos, lerpRate * Time.deltaTime);
+			this.transform.rotation = Quaternion.Lerp (this.transform.rotation, rot, lerpRate * Time.deltaTime);
 		}
 		CmdGiveNewPositionAndRot (this.transform.position, this.transform.rotation);
 	}
