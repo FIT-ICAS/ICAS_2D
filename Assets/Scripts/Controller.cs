@@ -98,4 +98,5 @@ public class Controller : NetworkBehaviour {
 		if(isLocalPlayer)
 			GUI.Label (new Rect (10, 10, 100, 90), speed + " mph");
 	}
+
 }
