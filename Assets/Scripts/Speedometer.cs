@@ -50,11 +50,7 @@ public class Speedometer : NetworkBehaviour {
 		d_DesFirstDigit.number = first;
 		d_DesSecondDigit.number = second;
 	}
-	IEnumerator LeftBlinker(){
 
-	}
 
-	IEnumerator RightBlinker(){
 
-	}
 }
