@@ -95,4 +95,9 @@ public class Speedometer : NetworkBehaviour {
 		rightOn = false;
 		renderBlinker (rBlinker, rightOn);
 	}
+=======
+
+
+
+>>>>>>> origin/Hud
 }
