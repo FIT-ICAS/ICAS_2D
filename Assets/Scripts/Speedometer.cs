@@ -63,7 +63,7 @@ public class Speedometer : NetworkBehaviour {
 		d_DesFirstDigit.number = first;
 		d_DesSecondDigit.number = second;
 	}
-<<<<<<< HEAD
+
 	void leftBlink(){
 		leftBlinker = leftBlinker ^ true;
 		rightBlinker = false;
@@ -96,9 +96,5 @@ public class Speedometer : NetworkBehaviour {
 		rightOn = false;
 		renderBlinker (rBlinker, rightOn);
 	}
-=======
 
-
-
->>>>>>> origin/Hud
 }
